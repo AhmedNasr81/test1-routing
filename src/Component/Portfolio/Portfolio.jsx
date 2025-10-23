@@ -19,7 +19,7 @@ export default function Portfolio() {
       <section className="py-5">
         <div className="container py-5">
 
-          {/* العنوان */}
+    
           <div className="text-center mb-4 mt-5">
             <h2 className={`fs-1 fw-bold text-uppercase ${Style.co}`}>
               Portfolio Component
@@ -38,7 +38,6 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* الصور */}
           <div className="row g-5 justify-content-center">
             {images.map((img, index) => (
               <div key={index} className={`col-12 col-md-6 col-lg-4 ${Style.imageContainer}`}>
@@ -55,7 +54,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* الصورة المكبرة */}
       {selectedImage && (
         <div className={Style.fullOverlay} onClick={() => setSelectedImage(null)}>
           <img src={selectedImage} alt="Selected" className={Style.enlargedImage} />
